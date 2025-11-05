@@ -1708,6 +1708,7 @@ function Altoholic:DrawCharacterTooltip(charName)
 	AltoTooltip:Show();
 end
 
+--[[
 -- *** Hooks ***
 local Orig_ChatEdit_InsertLink = ChatEdit_InsertLink
 function ChatEdit_InsertLink(text,arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9)
@@ -1718,6 +1719,7 @@ function ChatEdit_InsertLink(text,arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9)
 		return Orig_ChatEdit_InsertLink(text,arg1,arg2,arg3,arg4,arg5,arg6,arg7,arg8,arg9)
 	end
 end
+--]]
 
 -- ** GameTooltip Hooks **
 function Altoholic:HookTooltip()
