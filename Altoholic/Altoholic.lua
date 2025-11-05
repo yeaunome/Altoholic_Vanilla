@@ -882,7 +882,8 @@ function Altoholic:CHAT_MSG_ADDON(a1, a2)
 		-- DEFAULT_CHAT_FRAME:AddMessage(ORANGE .. string.sub(a2, 1, 20) .. "..." .. string.sub(a2, -20))
 		local c = self.db.account.data[V.faction][V.realm].char[V.player]
 		local completedQuests = c.CompletedQuests or {}
-		for qid in string.gmatch(a2, "[^ ]+") do
+		local string_gfind = string.gmatch or string.gfind
+		for qid in string_gfind(a2, "[^ ]+") do
 			completedQuests[qid] = true
 		end
 		-- debugQuestsComplete(completedQuests)
