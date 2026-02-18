@@ -1,0 +1,9 @@
+## Interface: 11200
+## Title: Altoholic_LocalSync_CrossFaction
+## Notes: Real-time cross-faction syncing for Altoholic
+## Author: yeaunome
+## Version: 2.0.1-CrossFaction
+## OptionalDeps: Altoholic
+## SavedVariables: AltoholicLocalSyncDB, AltoholicLocalSyncExport, AltoholicLocalSyncTimestamps, AltoholicLocalSyncMergedRealm
+
+Altoholic_LocalSync_CrossFaction.lua
