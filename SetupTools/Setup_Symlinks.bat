@@ -1,0 +1,3 @@
+@echo off
+echo Setting up symlinks...
+REM Commands to set up your symlinks go here
